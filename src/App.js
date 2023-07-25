@@ -1,22 +1,19 @@
+import React from "react";
 import "./App.css";
-import Button from "./components/Button";
-import KanyeImage from "./components/KanyeImage";
-import Navbar from "./components/Navbar";
-import Quotes from "./components/Quotes";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import RomanRoy from "./pages/RomanRoy";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    
-      <div className="App">
-    <Navbar />
-        <h1 className="title">Kanye says</h1>
-        <KanyeImage />
-        <Quotes />
-        <Button />
-      </div>
-   
+    <Router>
+      <Routes>
+      <Route path="/" element={<Home />} />
+        <Route path="/roman-roy" element={<RomanRoy />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
