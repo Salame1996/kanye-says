@@ -29,7 +29,7 @@ const images = [
     id: 7,
     url: "https://highprofiles.info/wp-content/uploads/2016/04/Yorke-main.jpg",
   },
-  
+
   {
     id: 9,
     url: "https://indiehoy.com/wp-content/uploads/2019/07/thom-yorke.jpg",
